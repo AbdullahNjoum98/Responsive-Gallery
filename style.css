@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: rgb(114, 114, 3);
+    color: rgb(234, 229, 229);
+    margin: 2% 2% 0 2%;
+    opacity: 0.9;
+    border: solid black 2px;
+    border-radius: 3px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div .img {
+    border: dotted black 1px;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    border-radius: 25px;
+    overflow: hidden;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.05;
+    margin: 10px;
+    position: relative; /* to align the h3 elements using abosulte position */
+    transition: flex 0.7s ease-in;
+}
+
+h3 {
+    font-size: 18px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    opacity: 0;
+}
+
+div .img:hover {
+    flex: 0.3;
+}
+
+div .img:hover h3 {
+    opacity: 1;
+}
+
+/*deacrease the number of images displayed to 3 when width < 480px */
+@media(max-width: 580px) {
+    .container {
+        width: 100vw;
+    }
+
+    div .img:nth-of-type(4), .img:nth-of-type(5) { /*4th and 5th img elements*/
+        display: none;
+    }
+
+}
