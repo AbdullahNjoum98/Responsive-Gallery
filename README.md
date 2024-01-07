@@ -1,5 +1,6 @@
 # Responsive-Gallery
 Responsive Gallery Using HTML and CSS
+
 This is a pretty simple project to demonstrate:
 1) Responsive design using vw/vh measurement units.
 2) The use of media query for manipulating specific screen sizes.
