@@ -1,5 +1,5 @@
-# Responsive-Gallery
-Responsive Gallery Using HTML and CSS
+# Golden Pegasus (Responsive Gallery)
+A visually stunning site, possibly for a brand or a creative project. It features elegant typography and imagery, creating a luxurious feel.
 
 This is a pretty simple project to demonstrate:
 1) Responsive design using vw/vh measurement units.
